@@ -46,7 +46,7 @@ const Login = () => {
             setAuth({user, pwd, roles, accessToken})
             setUser('');
             setPwd('');
-            navigate(from, {replace: true})
+            navigate(from, { replace: true });
         } catch (err) {
             if (!err?.response) {
                 setErrMsg('No Server Response');
